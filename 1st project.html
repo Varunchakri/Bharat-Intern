@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      .heading {
+        text-align: center;
+        border: dotted;
+        background-color: pink;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .yes {
+        background-color: greenyellow;
+        text-align: center;
+        border: dotted;
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+      }
+      #eww {
+        background-color: ghostwhite;
+        height: 35px;
+      }
+      .thar{
+    float: right;
+     animation-name: thar;
+     animation-iteration-count: infinite;
+     animation-duration: 5s;
+     animation-direction: alternate;
+      }
+@keyframes thar{
+    from{
+        width:150px ;
+        height: 150px;
+    }
+    to{
+        width: 250px;
+        height: 250px;
+    }
+}
+.cycle{
+    flex-direction: row;
+    /* float: left; */
+    animation-name: cycle;
+    animation-iteration-count: infinite;
+     animation-duration: 5s;
+     animation-direction: alternate;
+}
+@keyframes cycle{
+    from{
+        width: 150px;
+        height: 150px;
+    }
+    to{
+        width: 250px;
+        height: 250px;
+    }
+}
+    </style>
+  </head>
+  <!-- this is the background-image -->
+  <body style="background-image: url(nature.jpg)">
+    <header class="heading">
+      <h1>MY BLOG REVIEW</h1>
+    </header>
+    <div class="name">
+      <input type="text" placeholder="enter your name" />
+    </div>
+    <textarea name="varun" id="exp" cols="251" rows="10">
+            </textarea>
+    <div>
+      <input type="file" accept="image" />
+    </div>
+    <div>
+      <input type="file" accept="video" />
+    </div>
+    <!-- <img src="nature.jpg" alt=""> -->
+   <div class="thar">
+
+       <img src="thar.jpeg" alt="" height="150px" width="150px">
+    </div>
+    <div class="cycle">
+
+        <img src="cycle.jpeg" alt="" height="150px" width="150px">
+    </div>
+  </body>
+  <footer class="yes">
+    <button id="eww">Save button</button>
+  </footer>
+</html>
